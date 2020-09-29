@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>header</title>
+  <link rel="stylesheet" href="/common/common.min.css">
+  <style>
+    .template-header {
+      height: 0.88rem;
+      font-size: 0.24rem;
+      padding: 0 0.5rem 0 0.64rem;
+      box-shadow: 0px 0px 10px 0px rgba(87, 87, 87, 0.4);
+    }
+
+    .template-header .logo {
+      width: 1.72rem;
+      height: 0.48rem;
+    }
+    .template-header .active{
+      color:#51AA2B
+    }
+  </style>
+</head>
+
+<body>
+  <div class="template-header flex-between">
+    <img class="logo" src="/static/logo.png" alt="logo">
+    <div id="nav">
+      <a href="/index.html" class="active">品牌介绍</a>
+      <a href="/pages/join/join.html" class="m-l-20">加盟安佑</a>
+    </div>
+  </div>
+  <script src="/common/jquery-1.11.1.min.js"></script>
+  <script src="/common/common.js"></script>
+  <script>
+    if(window.location.href.indexOf('index.html')>-1){
+      $("#nav a").eq(0).addClass('active').siblings('a').removeClass('active');
+    }else if(window.location.href.indexOf('join.html')>-1){
+      $("#nav a").eq(1).addClass('active').siblings('a').removeClass('active');
+    }
+  </script>
+</body>
+
+</html>

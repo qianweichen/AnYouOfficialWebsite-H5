@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../../static/logo-icon.png" type="image/x-icon" />
+  <title>加盟安佑</title>
+  <link rel="stylesheet" href="../../common/common.min.css">
+  <link rel="stylesheet" href="../index/index.min.css">
+  <link rel="stylesheet" href="./join.min.css">
+</head>
+
+<body>
+  <div id="header"></div>
+  <div class="wrap">
+    <!-- 加盟流程 -->
+    <div class="flow">
+      <div class="title">加盟流程</div>
+      <img src="../../static/flow.png" alt="flow">
+    </div>
+    <!-- 加盟条件 -->
+    <div class="condition">
+      <div class="title">加盟条件</div>
+      <ul>
+        <li>1、正在从事房地产经纪业务、有志在房地产经纪行业长远发展</li>
+        <li>2、认可特许经营的商业模式，接受安佑地产的理念和使命</li>
+        <li>3、有团队合作精神，能够与其他加盟成员友好合作</li>
+        <li>4、具备一定的专业的形象和行业口碑，熟悉和了解当地的房地产市场</li>
+        <li>5、有一定的资金基础（具体标准各城市存在差异，详情可咨询所在城市安佑的授权经理）</li>
+        <li>6、持有工商营业执照和相关经纪资质证书等</li>
+      </ul>
+    </div>
+    <!-- 加盟意向表 -->
+    <div class="league">
+      <div class="title">
+        加盟意向表
+      </div>
+      <div class="ipt-group flex">
+        <div>姓名</div>
+        <input type="text" placeholder="请输入姓名">
+      </div>
+      <div class="ipt-group flex">
+        <div>电话</div>
+        <input type="text" placeholder="请输入电话">
+      </div>
+      <div class="ipt-group flex">
+        <div>城市</div>
+        <input type="text" placeholder="请输入城市">
+      </div>
+      <div class="submit flex-center">提交表单</div>
+    </div>
+    <!-- 合作品牌 -->
+    <div class="brand">
+      <div class="title">合作品牌</div>
+      <div class="title-line"></div>
+      <div class="flex-between">
+        <img src="../../static/brand1.png" alt="brand">
+        <img src="../../static/brand2.png" alt="brand">
+        <img src="../../static/brand3.png" alt="brand">
+        <img src="../../static/brand4.png" alt="brand">
+        <img src="../../static/brand5.png" alt="brand">
+      </div>
+    </div>
+  </div>
+  <div id="footer"></div>
+
+  <script src="../../common/jquery-1.11.1.min.js"></script>
+  <script src="../../common/common.js"></script>
+  <script>
+    //载入
+    $('#header').load('/template/header/header.html');
+    $('#footer').load('/template/footer/footer.html');
+  </script>
+</body>
+
+</html>
